@@ -1,0 +1,102 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+/* Main container styling */
+.container {
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+}
+
+/* Chat container */
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 400px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fafafa;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+/* Messages styling */
+#chat-box {
+    max-height: 80%;
+    overflow-y: auto;
+    margin-bottom: 10px;
+}
+
+.bot-message, .user-message {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.bot-message {
+    background-color: #d1f7d1;
+    text-align: left;
+}
+
+.user-message {
+    background-color: #f1f1f1;
+    text-align: right;
+}
+
+/* Input section styling */
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+}
+
+#user-input {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+#send-button {
+    width: 15%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#send-button:hover {
+    background-color: #45a049;
+}
+
+/* Additional responsive design for mobile screens */
+@media screen and (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+
+    #send-button {
+        width: 25%;
+    }
+}
